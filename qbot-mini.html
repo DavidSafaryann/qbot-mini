@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QBot Mini</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+    h1 {
+      color: #0088cc;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #0088cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0077b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to QBot Mini!</h1>
+  <p>Hi! I’m your question-answering assistant. Click the button below to chat with me!</p>
+  <button onclick="openTelegram()">Open Chat</button>
+
+  <script>
+    function openTelegram() {
+      window.open("https://t.me/YOUR_BOT_USERNAME", "_blank");
+    }
+  </script>
+</body>
+</html>
